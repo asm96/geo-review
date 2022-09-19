@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.review {
+  width: 290px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.review__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review__title {
+  font-size: 16px;
+  margin-bottom: 19px;
+}
+
+.review__input {
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #CFCFCF;
+  padding: 10px;
+}
+
+.review__input:focus {
+  border-color: #1371C8;
+}
+
+.review__input_text {
+  resize: none;
+  min-height: 78px;
+  margin-bottom: 19px;
+}
+
+.review__send {
+  align-self: start;
+  background-color: #FF8663;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  padding: 11px 20px;
+  transition: background-color .3s;
+}
+
+.review__send:hover {
+  background-color: #f17452;
+}
