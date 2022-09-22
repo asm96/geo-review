@@ -10,12 +10,23 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="main.css">
-  <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script defer src="main.js"></script>
 </head>
 
 <body>
   <div id="map"></div>
+  <script type="template" id="reviewTemplate">
+    <div class="review">
+      <div class="review__list"></div>
+      <form data-role="review-form" class="review__form">
+        <h3 class="review__title">Отзыв:</h3>
+        <input data-role="review-name" class="review__input" type="text" placeholder="Укажите ваше имя">
+        <input data-role="review-place" class="review__input" type="text" placeholder="Укажите место">
+        <textarea data-role="review-text" class="review__input review__input_text" placeholder="Оставить отзыв"></textarea>
+        <button data-role="review-add" class="review__send">Добавить</button>
+      </form>
+    </div>
+  </script>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>
